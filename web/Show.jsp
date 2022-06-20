@@ -26,7 +26,6 @@
                     <td>
                         <a href="UpdateController?scode=${o.code}" >edit</a>
                          <a href="DeleteController?pcode=${o.code}">delete</a>
-                   <!--     <a href="#" onclick="showMess(${o.code})">delete</a> -->
                     </td>
                 </tr>
             </c:forEach>
@@ -35,15 +34,5 @@
             <form action="Add.jsp">
                     <button type="submit"></i> Add Product</button>
                 </form>
-            <!--
-            <script>
-                function showMess(code){
-                    var option = confirm("Are you sure wanto to delete this product ?")
-                    if(option===true){
-                        window.location.href='DeleteController?sid='+code;   
-                    }
-                }
-                </script>
-            -->
     </body>
 </html>

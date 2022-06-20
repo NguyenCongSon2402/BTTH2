@@ -36,7 +36,7 @@ public class DeleteController extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet DeleteController</title>");            
+            out.println("<title>Servlet DeleteController</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet DeleteController at " + request.getContextPath() + "</h1>");
@@ -57,14 +57,12 @@ public class DeleteController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String code=request.getParameter("pcode");
-        ProductIO dao =new  ProductIO();
+        String code = request.getParameter("pcode");
+        ProductIO dao = new ProductIO();
         Product s = dao.getStudentByID(code);
-        request.setAttribute("st",s);
+        request.setAttribute("st", s);
         request.getRequestDispatcher("Delete.jsp").forward(request, response);
-        String code1=request.getParameter("sid");
-        dao.delete(code1);
-        //request.getRequestDispatcher("Show.jsp").forward(request, response);
+
     }
 
     /**
@@ -78,10 +76,6 @@ public class DeleteController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-//        String code = request.getParameter("code");
-//        ProductIO dao =new  ProductIO();
-//        dao.delete(code);
-//        response.sendRedirect("LoadController");
     }
 
     /**

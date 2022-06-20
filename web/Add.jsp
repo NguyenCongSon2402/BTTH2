@@ -28,11 +28,11 @@
                     <td><input type="number" name="price" required="" autofocus=""</td>
                 </tr>
                 <tr>
-                    <td></td>
+
                     <td><button type="submit">Add Product</button></td>
                 </tr>
             </table>
         </form>
-            <a href="http://localhost:8080/DemoTH2/LoadController" target="_blank">View Product</a>
+        <a href="http://localhost:8080/DemoTH2/LoadController" target="_blank">View Product</a>
     </body>
 </html>
